@@ -1,20 +1,21 @@
-""" Mad Libs.
-Instrucciones
-• Elegir una persona para ser el "llamador" para el Mad Libs redondo. 
-La persona que llama deberá solicitar la deseada categoría gramatical, 
-escribir la palabra proporcionada en el espacio correcto y leer toda la 
-historia de Mad Lib al grupo una vez que llena en todos los espacios en blanco en la página.
-
-• Dotar a la persona que llama con un lápiz y una hoja en blanco de Mad Libs. 
-La hoja cuentan una historia, poema o canción con varias palabras espacio en blanco izquierdo. 
-Habrá un parte del discurso específico como "Sustantivo", "verbo", "Verbo de tiempo pasado", "adjetivo" 
-o "adverbio" escrito en letras pequeñas debajo de cada espacio en blanco.
-
-• Instruir a la persona que llama a petición de sugerencias para una palabra llenar en el primer renglón diciéndole 
-a los jugadores la categoría gramatical requiere. Si ella dice, "verbo", por ejemplo, los jugadores pueden llamar sugerencias 
-tales como "caminata," "run", "bailar" o "comer". El llamador debe elegir una palabra y escribirla en el espacio en blanco.
-
-• Repita el proceso llamando y escribiendo hasta que la persona que llama en todos los espacios en blanco.
-
-• Leer en voz alta la historia completa de Mad Libs.
 """
+1. Definir una historia. 
+    - "Había una vez una mujer que se llamaba {Nombre}. {Nombre} tenia muy {ad1} su(s) {parte_cuerpo}.Un dia, {Nombre} le dijo a su {ad2} {relaciónPersonal}: "Hola, {relaciónPersonal}, como estás?, a lo que {relaciónPersonal} respondió: "Muy bien, y tu, {Nombre}?.
+2. Establecer variables para cada parte de la historia.
+    - Nombre, ad1, ad2, parte_cuerpo, relaciónPersonal.
+3. Imprimir la historia.
+"""
+
+print('Bienvenido a Historias Locas')
+print('Te solicitaremos que ingreses algunos datos')
+genero = input('Escoge un genero su genero(Hombre/Mujer):  ').lower()
+print('aue')
+if genero != 'hombre' and genero != 'mujer':
+    genero = 'hombre'
+nombre = input("¿Elige un nombre?: ")
+ad1 = input("Define un adjetivo: ")
+ad2 = input("Define otro adjetivo: ")
+parte_cuerpo = input("Define una parte del cuerpo: ")
+rP = input("Define una relación personal: ")
+
+print(f"Había una vez una mujer que se llamaba {nombre}. {nombre} tenia muy {ad1} su(s) {parte_cuerpo}. Un dia, {nombre} le dijo a su {ad2} {rP}: \"Hola, {rP}, como estás?, a lo que {rP} respondió: \"Muy bien, y tu, {nombre}?\", luego el mundo estallo.")
