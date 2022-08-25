@@ -9,13 +9,16 @@
 print('Bienvenido a Historias Locas')
 print('Te solicitaremos que ingreses algunos datos')
 genero = input('Escoge un genero su genero(Hombre/Mujer):  ').lower()
-print('aue')
 if genero != 'hombre' and genero != 'mujer':
     genero = 'hombre'
+if genero == 'hombre':
+    conjugar = 'un'
+else:
+    conjugar = 'una'
 nombre = input("¿Elige un nombre?: ")
 ad1 = input("Define un adjetivo: ")
 ad2 = input("Define otro adjetivo: ")
 parte_cuerpo = input("Define una parte del cuerpo: ")
 rP = input("Define una relación personal: ")
 
-print(f"Había una vez una mujer que se llamaba {nombre}. {nombre} tenia muy {ad1} su(s) {parte_cuerpo}. Un dia, {nombre} le dijo a su {ad2} {rP}: \"Hola, {rP}, como estás?, a lo que {rP} respondió: \"Muy bien, y tu, {nombre}?\", luego el mundo estallo.")
+print(f"Había una vez {conjugar} {genero} que se llamaba {nombre}. {nombre} tenia muy {ad1} su(s) {parte_cuerpo}. Un dia, {nombre} le dijo a su {ad2} {rP}: \"Hola, {rP}, como estás?, a lo que {rP} respondió: \"Muy bien, y tu, {nombre}?\", luego el mundo estallo.")
