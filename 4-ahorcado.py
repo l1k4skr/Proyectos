@@ -16,7 +16,7 @@ Si se ha completado la palabra, el juego termina y Jugador gana.
 Si se ha completado el dibujo del ahorcado, el juego termina y Jugador pierde.
 Si no se han completado ni el dibujo ni la palabra se vuelve al paso 4.
 """
-palabra = 'Hola'#input("Escribe una palabra: ")
+palabra = input("Escribe una palabra: ")
 respuesta = ("_ " * len(palabra))
 respuesta = respuesta[:-1]
 respuesta = respuesta.split(" ")

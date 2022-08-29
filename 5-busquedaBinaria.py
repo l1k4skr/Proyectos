@@ -9,7 +9,6 @@ Si Am > T, igualar R a m – 1 e ir al paso 2.
 Si Am = T, la búsqueda terminó, retornar m.
 
 """
-import random
 def bus_Binaria(lista, valor):
     L = 0
         
@@ -26,7 +25,6 @@ def bus_Binaria(lista, valor):
     else:
         
         return m
-
 
 
 print(bus_Binaria([1,2,3,4,5,6,7,8,9,10], 9))

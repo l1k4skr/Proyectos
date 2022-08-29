@@ -1,8 +1,6 @@
 """ Adivina el Numero 2.
 
 El usuario dará un numero y la computadora deberá adivinarlo.
-
-
 """
 import random
 import time
@@ -13,7 +11,7 @@ def IngresaNumero():
 def adivinar_el_numero():
     x = IngresaNumero()
     limiteInf = 0
-    limiteSup = 10
+    limiteSup = (x**2)//x
     intentos = 0
     while True:
         num = random.randint(limiteInf, x + limiteSup)
