@@ -16,22 +16,29 @@ Si se ha completado la palabra, el juego termina y Jugador gana.
 Si se ha completado el dibujo del ahorcado, el juego termina y Jugador pierde.
 Si no se han completado ni el dibujo ni la palabra se vuelve al paso 4.
 """
-palabra = input("Escribe una palabra: ")
-respuesta = ("_ " * len(palabra))
-respuesta = respuesta[:-1]
-respuesta = respuesta.split(" ")
-while "".join(respuesta) != palabra:
-    print(" ".join(respuesta))
-    letra = input("Escribe una letra: ")
-    if len(letra) < 2:
-        if letra in palabra:
-            indice = palabra.index(letra)
-            respuesta[indice] = letra
-    else:
-        for i in letra:
-            if i in palabra:
-                indice = palabra.index(i)
-                respuesta[indice] = i
+def parteInicial(palabra):
+    respuesta = ("_ " * len(palabra))
+    respuesta = respuesta[:-1]
+    respuesta = respuesta.split(" ")
+    return respuesta, palabra
+def bucleMain(respuesta, palabra, intentos):
+    while "".join(respuesta) != palabra:
+        print(" ".join(respuesta))
+        letra = input("Escribe una letra: ")
+        if len(letra) < 2:
+            if letra in palabra:
+                indice = palabra.index(letra)
+                respuesta[indice] = letra
+        else:
+            for i in letra:
+                if i in palabra:
+                    indice = palabra.index(i)
+                    respuesta[indice] = i
 
-print(" ".join(respuesta))
-print("Felicidades, has adivinado la palabra")
+    print(" ".join(respuesta))
+    
+if __name__ == '__main__':
+    palabra = "hola"
+    respuesta, palabra = parteInicial(palabra)
+    bucleMain(respuesta, palabra, 5)
+    print("Felicidades, has adivinado la palabra")
