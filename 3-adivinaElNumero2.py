@@ -9,12 +9,13 @@ def IngresaNumero():
     return numero_usuario
 
 def adivinar_el_numero():
-    x = IngresaNumero()
+    x = IngresaNumero() # El numero que el usuario escogió = 60
     limiteInf = 0
     limiteSup = (x**2)//x
     intentos = 0
     while True:
-        num = random.randint(limiteInf, x + limiteSup)
+        time.sleep(1)
+        num = random.randint(limiteInf, x + limiteSup) # limite inf = 57 limite sup = 70  = 
         while limiteInf > num:
             limiteInf -= 1
         while limiteSup < num:

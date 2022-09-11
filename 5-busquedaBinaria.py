@@ -7,7 +7,6 @@ Sea m (la posición del elemento del medio) igual a la parte entera de (L + R)�
 Si Am < T, igualar L a m + 1 e ir al paso 2.
 Si Am > T, igualar R a m – 1 e ir al paso 2.
 Si Am = T, la búsqueda terminó, retornar m.
-
 """
 def bus_Binaria(lista, valor):
     L = 0
@@ -26,5 +25,6 @@ def bus_Binaria(lista, valor):
         
         return m
 
-
-print(bus_Binaria([1,2,3,4,5,6,7,8,9,10], 9))
+lista = [1,2,3,4,5,6,7,8,9,10]
+print(bus_Binaria(lista, 5))
+print(lista[bus_Binaria(lista, 5)])

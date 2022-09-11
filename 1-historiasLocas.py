@@ -1,24 +1,39 @@
-"""
-1. Definir una historia. 
-    - "Había una vez una mujer que se llamaba {Nombre}. {Nombre} tenia muy {ad1} su(s) {parte_cuerpo}.Un dia, {Nombre} le dijo a su {ad2} {relaciónPersonal}: "Hola, {relaciónPersonal}, como estás?, a lo que {relaciónPersonal} respondió: "Muy bien, y tu, {Nombre}?.
-2. Establecer variables para cada parte de la historia.
-    - Nombre, ad1, ad2, parte_cuerpo, relaciónPersonal.
-3. Imprimir la historia.
-"""
+def solicitud_datos():
+    """Función que solicitara los datos al usuario
 
-print('Bienvenido a Historias Locas')
-print('Te solicitaremos que ingreses algunos datos')
-genero = input('Escoge un genero su genero(Hombre/Mujer):  ').lower()
-if genero != 'hombre' and genero != 'mujer':
-    genero = 'hombre'
-if genero == 'hombre':
-    conjugar = 'un'
-else:
-    conjugar = 'una'
-nombre = input("¿Elige un nombre?: ")
-ad1 = input("Define un adjetivo: ")
-ad2 = input("Define otro adjetivo: ")
-parte_cuerpo = input("Define una parte del cuerpo: ")
-rP = input("Define una relación personal: ")
+    Returns:
+        _tuple: Una tuple con los datos ingresados por el usuario
+    """
+    genero = input("Ingrese su genero (M/H): ").lower()
+    nombre = input("Ingrese su nombre: ")
+    apellido = input("Ingrese su apellido: ")
+    edad = int(input("Ingrese su edad: "))
+    ad1 = input("Ingrese primer adjetivo: ")
+    ad2 = input("Ingrese segundo adjetivo: ")
+    objeto = input("Define un objeto: ")
+    rP = input("Dime una relación personal (Padre, amig@, prim@, etc): ")
+    
+    return (nombre, apellido, edad, genero, ad1, ad2, objeto, rP)
 
-print(f"Había una vez {conjugar} {genero} que se llamaba {nombre}. {nombre} tenia muy {ad1} su(s) {parte_cuerpo}. Un dia, {nombre} le dijo a su {ad2} {rP}: \"Hola, {rP}, como estás?, a lo que {rP} respondió: \"Muy bien, y tu, {nombre}?\", luego el mundo estallo.")
+def definidorDeGemerito(genero):
+    """Función que definirá el genero del usuario
+    Args:
+        genero (str): El genero ingresado por el usuario
+    Returns:
+        str: El genero del usuario
+    """
+    if genero == "m":
+        return 'una'
+    else:
+        return "un"
+if '__main__' == __name__:        
+        print('Bienvenido a Historias Locas')
+        print('Te solicitaremos que ingreses algunos datos')
+        datos = solicitud_datos()
+        conjugar = definidorDeGemerito(datos[3])
+        nombre = datos[0]
+        ad1 = datos[4]
+        ad2 = datos[5]
+        objeto = datos[6]
+        rP = datos[7]
+        print(f"Había una vez una persona que se llamaba {nombre}. {nombre} tenia muy {ad1} su(s) {objeto}. Un dia, {nombre} le dijo a su {ad2} {rP}: \"Hola, {rP}, como estás?, a lo que {rP} respondió: \"Muy bien, y tu, {nombre}?\", a lo que {nombre} respondió: \"Muy bien también, gracias\". Y así fue como {nombre} y su {rP} se fueron a jugar a la playa.")
