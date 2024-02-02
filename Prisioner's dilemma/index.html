@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Prisioner Dillema</title>
+</head>
+<body>
+    <header>
+        <h1>Prisioner Dillema</h1>
+        <p>Prisioner Dillema is a game theory that shows why two completely "rational" individuals might not cooperate, even if it appears that it is in their best interests to do so. It was originally framed by Merrill Flood and Melvin Dresher working at RAND in 1950. Albert W. Tucker formalized the game with prison sentence payoffs and gave it the "prisoner's dilemma" name.</p>
+        <p>Two members of a criminal gang are arrested and imprisoned. Each prisoner is in solitary confinement with no means of communicating with the other. The prosecutors lack sufficient evidence to convict the pair on the principal charge, but they have enough to convict both on a lesser charge. Simultaneously, the prosecutors offer each prisoner a bargain. Each prisoner is given the opportunity either to betray the other by testifying that the other committed the crime, or to cooperate with the other by remaining silent. The offer is:
+            <ul>
+                <li>If A and B each betray the other, each of them serves two years in prison</li>
+                <li>If A betrays B but B remains silent, A will be set free and B will serve three years in prison (and vice versa)</li>
+                <li>If A and B both remain silent, both of them will only serve one year in prison (on the lesser charge)</li>
+            </ul>
+        </p>
+        <p>It is assumed that both prisoners are rational and will have no opportunity for future reward or punishment for their actions. Because betraying a partner offers a greater reward than cooperating with them, all purely rational self-interested prisoners would betray the other, and so the only possible outcome for two purely rational prisoners is for them to betray each other. The interesting part of this result is that pursuing individual reward logically leads both of the prisoners to betray, when they would get a better reward if they both cooperated. In reality, humans display a systematic bias towards cooperative behavior in this and similar games, much more so than predicted by simple models of "rational" self-interested action.</p>
+        <p>There are many variations of the game, but the standard version is as follows:</p>
+        <ul>
+            <li>The game is a two-player game with the following rules:</li>
+            <li>Each player can choose to cooperate
+                
+    </header>
+    <main>
+        <form action="game.php" method="post">
+            <label for="player1">Player 1</label>
+            <select name="player1" id="player1">
+                <option value="cooperate">Cooperate</option>
+                <option value="betray">Betray</option>
+            </select>
+            <label for="player2">Player 2</label>
+            <select name="player2" id="player2">
+                <option value="cooperate">Cooperate</option>
+                <option value="betray">Betray</option>
+            </select>
+            <input type="submit" value="Play">
+        </form>
+</body>
+</html>

@@ -1,6 +1,8 @@
 from random import choice
 
+
 class player:
+
     def __init__(self, name) -> None:
         self.coins = 0
         self.name = name
@@ -9,7 +11,6 @@ class player:
     
     def __str__(self) -> str:
         self.show_info()
-        return "\n"
             
 
     def show_info(self):

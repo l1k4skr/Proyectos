@@ -11,20 +11,20 @@ the game has four possible outcomes:
 
 -- Options --
 # 1. Cooperate
-Player 1: Cooperate
-Player 2: Cooperate
+Player 1: Cooperate +3
+Player 2: Cooperate +3
 
 # 2. Betray
-Player 1: Betray
-Player 2: Betray
+Player 1: Betray +1
+Player 2: Betray +1
 
 # 3. Betray and Cooperate
-Player 1: Cooperate
-Player 2: Betray
+Player 1: Cooperate +0
+Player 2: Betray +5
 
 # 4. Cooperate and Betray
-Player 1: Betray
-Player 2: Cooperate
+Player 1: Betray +5
+Player 2: Cooperate +0
 
 -- Outcomes --
 
@@ -54,14 +54,14 @@ def main():
     
     
     
-    J1 = cooperate1_betray2("Jugador 1")
-    J2 = betray("Jugador 2")
+    J1 = player("Jugador 1")
+    J2 = player("Jugador 2")
     
     show_player_info(J1 , 1)
     show_player_info(J2, 2)
     
     
-    
+    counter = 0
     while J1.coins < 10 and J2.coins < 10:
         option_played_J1 = J1.choice_option()
         option_played_J2 = J2.choice_option()
@@ -73,6 +73,7 @@ def main():
         # 1. Cooperate
         # player1 = "cooperate" 
         # player2 = "cooperate"
+        print(f"# {counter+1}. Cooperate")
         if option_played_J1 == "cooperate" and option_played_J2 == "cooperate":
             print("Both players receive a small reward")
             J1.coins += 3
@@ -99,6 +100,7 @@ def main():
         elif option_played_J1 == "betray" and option_played_J2 == "cooperate":
             print("Player 1 receives a large reward and Player 2 receives a large punishment")
             J1.coins += 5
+        counter += 1
             
     show_player_info(J1 , 1)
     show_player_info(J2 , 2)
