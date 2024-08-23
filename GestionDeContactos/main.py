@@ -73,6 +73,17 @@ def listar_por_etiqueta(etiqueta):
     if not found:
         error_not_founds()
 
+
+if '__main__' == __name__:
+    while True:
+        print('Bienvenido a la gestion de contactos')
+        print('1. Agregar contacto')
+        print('2. Eliminar contacto')
+        print('3. Buscar contacto')
+        print('4. Listar contactos por etiqueta')
+        print('5. Salir')
+        opcion = int(input('Ingrese una opcion: '))
+
 contactos = []
 
 contacto1 = crear_contacto('Andres', '999999999', {'Familia', 'Trabajo', 'Estudiante', 'Amigo'}) 
