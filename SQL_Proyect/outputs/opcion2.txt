@@ -1,0 +1,49 @@
+python main.py
+Conexión exitosa a la base de datos.
+
+        1. Tour y valoraciones del dia
+        2. Reservas de tours anuales
+        3. Ventas en viñas
+        4. Informe de ganancias (último año)
+        5. Informe Comparativo de ganancias (dos años)
+        6. Gráfico de Sectores
+        7. Salir
+
+Ingrese una opcion: 2
+Ingrese el año: 2024
+ID Tour Programado: 1
+ID Tour: 1
+Horario del Tour: 09:00:00
+Fecha: 2024-05-15
+Hora del Tour Programado: 09:00:00
+N° de Operación: 1
+Nombre Cliente: Juan Pérez
+RUT: 12345678-9
+Tipo de Pago: Tarjeta
+Número de Acompañantes: 2
+Lista de Acompañantes: Ana Gómez, Luis Martínez
+--------------------------------------------------
+ID Tour Programado: 2
+ID Tour: 2
+Horario del Tour: 14:00:00
+Fecha: 2024-06-20
+Hora del Tour Programado: 14:00:00
+N° de Operación: 2
+Nombre Cliente: María López
+RUT: 98765432-1
+Tipo de Pago: Efectivo
+Número de Acompañantes: 0
+Lista de Acompañantes: Ninguno
+--------------------------------------------------
+ID Tour Programado: 3
+ID Tour: 3
+Horario del Tour: 11:00:00
+Fecha: 2024-07-10
+Hora del Tour Programado: 11:00:00
+N° de Operación: 3
+Nombre Cliente: Carlos Sánchez
+RUT: 11223344-5
+Tipo de Pago: Transferencia
+Número de Acompañantes: 1
+Lista de Acompañantes: Sofía Díaz
+--------------------------------------------------

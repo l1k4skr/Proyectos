@@ -1,0 +1,21 @@
+        1. Tour y valoraciones del dia
+        2. Reservas de tours anuales
+        3. Ventas en viñas
+        4. Informe de ganancias (último año)
+        5. Informe Comparativo de ganancias (dos años) 
+        6. Gráfico de Sectores
+        7. Salir
+        
+Ingrese una opcion: 6
+Ingrese el año: 2024
+Gráfico de sectores:
+
+Vinedo: Viña Concha y Toro
+Número de Clientes: 1
+--------------------------------------------------
+Vinedo: Viña Montes
+Número de Clientes: 1
+--------------------------------------------------
+Vinedo: Viña Santa Rita
+Número de Clientes: 1
+--------------------------------------------------

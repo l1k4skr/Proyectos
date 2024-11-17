@@ -1,0 +1,23 @@
+
+
+        1. Tour y valoraciones del dia
+        2. Reservas de tours anuales
+        3. Ventas en viñas
+        4. Informe de ganancias (último año)
+        5. Informe Comparativo de ganancias (dos años)
+        6. Gráfico de Sectores
+        7. Salir
+
+Ingrese una opcion: 4
+Ingrese el año: 2024
+Promedio de ganancias anual: 74.96
+Ganancias superiores al promedio del último año (2024):
+
+Tipo: Tour
+ID de Operación: 1
+Total de Venta: 150.00
+--------------------------------------------------
+Tipo: Tour
+ID de Operación: 3
+Total de Venta: 110.00
+--------------------------------------------------

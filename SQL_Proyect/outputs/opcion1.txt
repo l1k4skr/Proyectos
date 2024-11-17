@@ -1,0 +1,26 @@
+python main.py
+Conexión exitosa a la base de datos.
+
+    1. Tour y valoraciones del dia
+    2. Reservas de tours anuales
+    3. Ventas en viñas
+    4. Informe de ganancias (último año)
+    5. Informe Comparativo de ganancias (dos años)
+    6. Gráfico de Sectores
+    7. Salir
+
+Ingrese una opcion: 1
+Ingrese el año: 2024
+Ingrese el mes: 5
+Ingrese el dia: 15
+Clientes que asistieron al viñedo en esa fecha:
+
+ID Tour Programado: 1
+ID Tour: 1
+Nombre Cliente: Juan Pérez
+RUT: 12345678-9
+Fecha: 2024-05-15
+Hora Tour: 09:00:00
+Valoración: 5
+Descripción Reseña: Excelente tour y servicio.
+--------------------------------------------------
